@@ -1,9 +1,7 @@
 import { defineConfig } from "vite";
-// import vue from "@vitejs/plugin-vue";
-import { ghPages } from "vite-plugin-gh-pages";
+import vue from "@vitejs/plugin-vue";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [ghPages()],
-  base: "/my-threejs-door/",
+  plugins: [vue()],
+  base: "/test_Three/", // Замените "my-vue-project" на название вашего репозитория
 });
